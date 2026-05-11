@@ -113,16 +113,16 @@ body{
     color: orange;
 }
 .Number:active{
-    transform: scale(0.96);
+    transform: scale(0.90);
 }
 .Operation:active{
-    transform: scale(0.96);
+    transform: scale(0.90);
 }
 .Equal:active{
-    transform: scale(0.96);
+    transform: scale(0.90);
 }
 .Clear:active{
-    transform: scale(0.96);
+    transform: scale(0.90);
 }
 @media (max-width: 1400px){
     .Headline{
