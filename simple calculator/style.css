@@ -1,0 +1,137 @@
+body{
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#Display{
+    font-size: 1.5em;
+    width: 400px;
+    height: 70px;
+    padding: 10px;
+    margin: 10px;
+    border: black 5px solid;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: right;
+    background-color: rgb(49, 49, 49);
+    margin-bottom: 25px;
+    color: white;
+    font-size: 50px;
+    font-family:  Boxing-Regular;
+}
+#Keys{
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 150px;
+}
+.Number{
+    border: black 3px solid;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 40px;
+    color: white;
+    border-color: rgb(71, 71, 71);
+    background-color: rgb(71, 71, 71);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    font-family:  Tanker-Regular;
+}
+.Operation{
+    border: black 3px solid;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 40px;
+    color: white;
+    border-color: orange;
+    background-color: orange;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    font-family: Tanker-Regular;
+}
+.Clear{
+    border: black 5px solid;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 40px;
+    color: white;
+    border-color: rgb(19, 19, 19);
+    background-color: rgb(19, 19, 19);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    font-family:  Tanker-Regular;
+}
+.Equal{
+    border: black 5px solid;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 40px;
+    color: white;
+    border-color: rgb(19, 19, 19);
+    background-color: rgb(19, 19, 19);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    font-family:  Tanker-Regular;
+}
+@font-face {
+  font-family: 'Boxing-Regular';
+  src: url('Fonts/Boxing/WEB/fonts/Boxing-Regular.woff2') format('woff2'),
+       url('Fonts/Boxing/WEB/fonts/Boxing-Regular.woff') format('woff'),
+       url('Fonts/Boxing/WEB/fonts/Boxing-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tanker-Regular';
+  src: url('Fonts/Tanker/WEB/fonts/Tanker-Regular.woff2') format('woff2'),
+       url('Fonts/Tanker/WEB/fonts/Tanker-Regular.woff') format('woff'),
+       url('Fonts/Tanker/WEB/fonts/Tanker-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+.Headline{
+    color: White;
+    font-size: 100px;
+    font-family:  Boxing-Regular;
+    margin-top: 0px;
+    margin-bottom: 150px;
+
+}
+#my{
+    color: orange;
+}
+.Number:active{
+    transform: scale(0.96);
+}
+.Operation:active{
+    transform: scale(0.96);
+}
+.Equal:active{
+    transform: scale(0.96);
+}
+.Clear:active{
+    transform: scale(0.96);
+}
+@media (max-width: 1400px){
+    .Headline{
+        margin-bottom: 50px;
+        margin-top: 0px;
+        font-size: 5em;
+    }
+    #Keys{
+        margin-bottom: 0px;
+    }
+}
+
