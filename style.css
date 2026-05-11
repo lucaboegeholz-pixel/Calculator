@@ -170,6 +170,9 @@ body{
         touch-action: none;
         position: fixed;
     }
+    #Display{
+        color: white
+    }
 }
 
 
