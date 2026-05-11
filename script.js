@@ -14,7 +14,7 @@ DisplayGrowing = function(){
     let mirrorWidth = mirror.offsetWidth;
     let displayWidth = Display.offsetWidth;
     if(mirrorWidth > displayWidth){
-        Display.style.width = mirrorWidth + 20 + "px"
+    Display.style.width = mirrorWidth + 20 + "px"
     }
 }
 
@@ -23,11 +23,20 @@ Keys.onclick = function(){
     
     let keyText = event.target.innerText;
 
-    DisplayGrowing();
-    let number1 = event.target.innerText;
-    Display.value += number1;
-
-    if (keyText === "C"){
+    if (keyText === "="){
+        try {
+            Display.value = eval(Display.value.replace(/x/g, '*'));
+        } catch {
+            Display.value = "Error";
+        }
+    }
+    else if (keyText === "C"){
         Display.value = ""
     }
+    else{
+    let number = event.target.innerText;
+    Display.value += number;
+    DisplayGrowing();
+    }
 }
+
