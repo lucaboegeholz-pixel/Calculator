@@ -164,6 +164,9 @@ body{
     .Clear{
         transition: none;
     }
+    body{
+        touch-action: manipulation;
+    }
 }
 
 
