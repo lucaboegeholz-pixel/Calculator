@@ -40,7 +40,7 @@ body{
     border-color: rgb(71, 71, 71);
     background-color: rgb(71, 71, 71);
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.1s ease;
     font-family:  Tanker-Regular;
     user-select: none;
     -webkit-user-select: none;
@@ -151,6 +151,19 @@ body{
         font-size: 40px;
         margin-top: 0px;
         margin-bottom: 70px;
+    }    
+    .Number{
+        transition: none;
+    }
+    .Operation{
+        transition: none;
+    }
+    .Equal{
+        transition: none;
+    }
+    .Clear{
+        transition: none;
     }
 }
+
 
