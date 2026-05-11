@@ -166,6 +166,9 @@ body{
     }
     body{
         touch-action: manipulation;
+        overflow: hidden;
+        touch-action: none;
+        position: fixed;
     }
 }
 
