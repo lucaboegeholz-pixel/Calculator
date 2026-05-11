@@ -58,6 +58,9 @@ body{
     cursor: pointer;
     transition: transform 0.2s ease;
     font-family: Tanker-Regular;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 .Clear{
     border: black 5px solid;
@@ -71,6 +74,9 @@ body{
     cursor: pointer;
     transition: transform 0.2s ease;
     font-family:  Tanker-Regular;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 .Equal{
     border: black 5px solid;
@@ -84,6 +90,9 @@ body{
     cursor: pointer;
     transition: transform 0.2s ease;
     font-family:  Tanker-Regular;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 @font-face {
   font-family: 'Boxing-Regular';
