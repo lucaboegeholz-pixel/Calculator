@@ -40,3 +40,25 @@ Keys.onclick = function(){
     }
 }
 
+document.addEventListener('keydown',
+    function(event){
+        let Key = event.key;
+        if (Key === "=" || Key === "Enter"){
+            try{
+            Display.value = eval(Display.value.replace(/x/g, '*'));
+        }   catch {
+            Display.value="Error";
+        }
+    }
+        else if(Key === "Backspace"){
+            Display.value = ""
+        }
+        else if(Key === "Shift"){
+            return
+        }
+        else {
+            Display.value += Key;
+            DisplayGrowing();
+        }
+    }
+)
